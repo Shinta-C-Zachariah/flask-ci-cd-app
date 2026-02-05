@@ -25,6 +25,7 @@ jobs:
 
       - name: Run unit tests
         run: |
+          export PYTHONPATH=$(pwd)
           pytest
 
   docker-build-push:
